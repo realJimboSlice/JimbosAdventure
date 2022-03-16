@@ -18,7 +18,7 @@ public class Room {
     this.description = description;
   }
 
-  public String nameDescription() {
+  public String descriptionName() {
     return name;
   }
 

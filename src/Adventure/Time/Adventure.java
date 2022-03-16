@@ -48,7 +48,7 @@ public class Adventure {
     if (currentRoom.getNorth() != null) {
       currentRoom = currentRoom.getNorth();
       System.out.println("You're in:");
-      System.out.println(currentRoom.nameDescription());
+      System.out.println(currentRoom.descriptionName());
     }
     else {
       System.out.println("It's a wall");
@@ -59,7 +59,7 @@ public class Adventure {
     if (currentRoom.getSouth() != null) {
       currentRoom = currentRoom.getSouth();
       System.out.println("You're in:");
-      System.out.println(currentRoom.nameDescription());
+      System.out.println(currentRoom.descriptionName());
     }
     else {
       System.out.println("It's a wall");
@@ -71,7 +71,7 @@ public class Adventure {
     if (requestedRoom != null) {
       currentRoom = requestedRoom;
       System.out.println("You're in:");
-      System.out.println(currentRoom.nameDescription());
+      System.out.println(currentRoom.descriptionName());
     }
     else {
       System.out.println("It's a wall");
@@ -82,7 +82,7 @@ public class Adventure {
     if (currentRoom.getWest() != null) {
       currentRoom = currentRoom.getWest();
       System.out.println("You're in:");
-      System.out.println(currentRoom.nameDescription());
+      System.out.println(currentRoom.descriptionName());
     }
     else {
       System.out.println("It's a wall");
