@@ -10,10 +10,9 @@ public class Adventure {
   // The privates
   private Room currentRoom;
   private Room requestedRoom;
-
   private boolean isThisGameOn = true;
 
-  public void everyRoom() {
+  public void allTheRooms() {
     // Every single room
     Room room1 = new Room("Room 1", "This is Room 1");
     Room room2 = new Room("Room 2", "This is Room 2");
@@ -45,22 +44,24 @@ public class Adventure {
     currentRoom = room1;
   }
 
-  public void goSouth() {
-    if (currentRoom.getSouth() != null) {
-      currentRoom = currentRoom.getSouth();
-      System.out.println("You're in:");
-      System.out.println(currentRoom.nameDescription());
-    } else {
-      System.out.println("It's a wall");
-    }
-  }
-
   public void goNorth() {
     if (currentRoom.getNorth() != null) {
       currentRoom = currentRoom.getNorth();
       System.out.println("You're in:");
       System.out.println(currentRoom.nameDescription());
-    } else {
+    }
+    else {
+      System.out.println("It's a wall");
+    }
+  }
+
+  public void goSouth() {
+    if (currentRoom.getSouth() != null) {
+      currentRoom = currentRoom.getSouth();
+      System.out.println("You're in:");
+      System.out.println(currentRoom.nameDescription());
+    }
+    else {
       System.out.println("It's a wall");
     }
   }
@@ -71,7 +72,8 @@ public class Adventure {
       currentRoom = requestedRoom;
       System.out.println("You're in:");
       System.out.println(currentRoom.nameDescription());
-    } else {
+    }
+    else {
       System.out.println("It's a wall");
     }
   }
@@ -81,7 +83,8 @@ public class Adventure {
       currentRoom = currentRoom.getWest();
       System.out.println("You're in:");
       System.out.println(currentRoom.nameDescription());
-    } else {
+    }
+    else {
       System.out.println("It's a wall");
     }
   }
@@ -96,33 +99,33 @@ public class Adventure {
   }
 
   public void mainMenu() {
-    everyRoom();
+    allTheRooms();
 
 
     while (isThisGameOn) {
       char input = sc.next().charAt(0);
       System.out.println();
       if (input == 'n') {
-        System.out.println("Going north");
+        System.out.println("Heading North");
         goNorth();
 
       } else if (input == 's') {
-        System.out.println("Going south");
+        System.out.println("Heading South");
         goSouth();
 
       } else if (input == 'e') {
-        System.out.println("Going east");
+        System.out.println("Heading East");
         goEast();
 
       } else if (input == 'w') {
-        System.out.println("Going west");
+        System.out.println("Heading West");
         goWest();
 
       } else if (input == 'l') {
         System.out.println("Look");
         look();
 
-      } else if (input == 'e') {
+      } else if (input == 'x') {
         System.out.println("exit confirmed");
         exitGame();
       }
