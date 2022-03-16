@@ -105,6 +105,7 @@ public class Adventure {
     while (isThisGameOn) {
       char input = sc.next().charAt(0);
       System.out.println();
+
       if (input == 'n') {
         System.out.println("Heading North");
         goNorth();

@@ -45,7 +45,7 @@ Discount Gandalf - Encountered in Room 6(66)
 
 	Attacks:
 	1. Wildly flailing his stick
-		“Discount Gandalf waves his stick around like a blind man. He ain’t blind tho.”
+		“Discount Gandalf waves his stick around like a blind man. He ain’t blind tho...”
 	2. Flamethrower
 		“Discount Gandalf whips out his lighter and can of deodorant. He starts sprayin’ and prayin’, baby!”.
 	3. Fireball
