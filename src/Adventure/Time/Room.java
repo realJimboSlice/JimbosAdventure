@@ -12,10 +12,10 @@ public class Room {
   private Room east;
   private Room west;
 
-  public Room(String name, String description) {
+  public Room(String description, String name) {
 
-    this.name = name;
     this.description = description;
+    this.name = name;
   }
 
   public String descriptionName() {
