@@ -18,12 +18,12 @@ public class Room {
     this.name = name;
   }
 
-  public String descriptionName() {
-    return name;
-  }
-
   public String descriptionTwo() {
     return description;
+  }
+
+  public String descriptionName() {
+    return name;
   }
 
   // Get'n and set'n
