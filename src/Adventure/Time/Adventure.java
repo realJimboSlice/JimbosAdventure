@@ -14,6 +14,7 @@ public class Adventure {
   private boolean isThisGameOn = true;
 
   public void everyRoom() {
+    // Every single room
     Room room1 = new Room("Room 1", "This is Room 1");
     Room room2 = new Room("Room 2", "This is Room 2");
     Room room3 = new Room("Room 3", "This is Room 3");
@@ -23,8 +24,6 @@ public class Adventure {
     Room room7 = new Room("Room 7", "This is Room 7");
     Room room8 = new Room("Room 8", "This is Room 8");
     Room room9 = new Room("Room 9", "This is Room 9");
-
-    //All the room directions
     room1.setEast(room2);
     room1.setSouth(room4);
     room2.setWest(room1);
@@ -88,7 +87,7 @@ public class Adventure {
   }
 
   public void look() {
-    System.out.println(currentRoom.descriptionOfDescription());
+    System.out.println(currentRoom.descriptionTwo());
   }
 
   public void exitGame() {
