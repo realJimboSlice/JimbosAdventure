@@ -36,6 +36,14 @@ public class Room {
     this.north = north;
   }
 
+  public Room getSouth() {
+    return south;
+  }
+
+  public void setSouth(Room south) {
+    this.south = south;
+  }
+
   public Room getEast() {
     return east;
   }
@@ -52,13 +60,6 @@ public class Room {
     this.west = west;
   }
 
-  public Room getSouth() {
-    return south;
-  }
-
-  public void setSouth(Room south) {
-    this.south = south;
-  }
 }
 
 
