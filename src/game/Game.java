@@ -78,9 +78,9 @@ public class Game implements java.io.Serializable {
         String retStr = "";
         Thing t = player.getThings().thisOb(obname);
         if (obname.equals("")) {
-            retStr = "You'll have to tell me which object you want to drop!"; // if no object specified
+            retStr = "You'll have to tell me which object you want to drop, man!"; // if no object specified
         } else if (t == null) {
-            retStr = "You haven't got one of those!";
+            retStr = "You ain't got one of those";
         } else {
             transferOb(t, player.getThings(), player.getRoom().getThings());
             retStr = obname + " dropped!";
