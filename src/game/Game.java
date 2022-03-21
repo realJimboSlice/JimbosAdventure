@@ -178,39 +178,16 @@ public class Game implements java.io.Serializable {
             msg = verb + " is not a known verb! ";
         } else {
             switch (verb) {
-                case "n":
-                    goN();
-                    break;
-                case "s":
-                    goS();
-                    break;
-                case "w":
-                    goW();
-                    break;
-                case "e":
-                    goE();
-                    break;
-                case "u":
-                    goU();
-                    break;
-                case "d":
-                    goD();
-                    break;
-                case "l":
-                case "look":
-                    look();
-                    break;
-                case "inventory":
-                case "i":
-                    showInventory();
-                    break;
-                case "help":
-                case "h":
-                    help();
-                    break;
-                default:
-                    msg = verb + " (not yet implemented)";
-                    break;
+                case "n" -> goN();
+                case "s" -> goS();
+                case "w" -> goW();
+                case "e" -> goE();
+                case "u" -> goU();
+                case "d" -> goD();
+                case "l", "look" -> look();
+                case "inventory", "i" -> showInventory();
+                case "help", "h" -> help();
+                default -> msg = verb + " (not yet implemented)";
             }
         }
         return msg;
