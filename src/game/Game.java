@@ -28,7 +28,7 @@ public class Game implements java.io.Serializable {
         ThingList playerlist = new ThingList();
         // Add Rooms to the map
         // Room (The format is: name, description, direction (N,S,E,W,U,D), item-list)
-        map.add(new Room("Troll Room", "A dank room that smells of troll",
+        map.add(new Room("Room1", "It smells like Mountain Dew and stale Doritos",
             Direction.NOEXIT, 2, Direction.NOEXIT, 1, Direction.NOEXIT, Direction.NOEXIT, RoomOneList));
 
         // create player and place in Room 0
