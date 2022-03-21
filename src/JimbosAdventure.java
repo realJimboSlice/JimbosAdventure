@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class JimbosAdventure{
+public class JimbosAdventure {
 
     static Game game;
 
