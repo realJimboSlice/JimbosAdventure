@@ -17,14 +17,13 @@ public class Game implements java.io.Serializable {
             "take", "drop", "look", "l", "i", "inventory",
             "n", "s", "w", "e", "u", "d",
             "h", "help"));
-    List<String> objects = new ArrayList<>(Arrays.asList("carrot", "sausage",
-            "paper", "pencil", "ring", "wombat"));
+    List<String> objects = new ArrayList<>(Arrays.asList("stick"));
 
     public Game() {
         this.map = new ArrayList<Room>();
 
         ThingList RoomOneList = new ThingList();
-        RoomOneList.add(new Treasure("carrot", "It is a very crunchy carrot", 1));
+        RoomOneList.add(new Treasure("stick", "it's an ordinary stick, yo", 1));
 
         ThingList playerlist = new ThingList();
         // Add Rooms to the map
