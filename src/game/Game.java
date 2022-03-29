@@ -35,7 +35,7 @@ public class Game implements java.io.Serializable {
             Direction.NOEXIT, 2, Direction.NOEXIT, 1, Direction.NOEXIT, Direction.NOEXIT,
             RoomOneList));
         map.add(new Room("Room2", "It don't smell too bad",
-            1, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT,
+            1, Direction.NOEXIT, 0, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT,
            RoomTwoList));
 
         // create player and place in Room 0
