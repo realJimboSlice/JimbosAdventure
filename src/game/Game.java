@@ -25,11 +25,18 @@ public class Game implements java.io.Serializable {
         ThingList RoomOneList = new ThingList();
         RoomOneList.add(new Treasure("stick", "it's an ordinary stick, yo", 1));
 
+        ThingList RoomTwoList = new ThingList();
+        RoomTwoList.add(new Treasure("Deez Nuts", "it's a pair of nuts", 2));
+
         ThingList playerlist = new ThingList();
         // Add Rooms to the map
         // Room (The format is: name, description, direction (N,S,E,W,U,D), item-list)
         map.add(new Room("Room1", "It smells like Mountain Dew and stale Doritos",
-            Direction.NOEXIT, 2, Direction.NOEXIT, 1, Direction.NOEXIT, Direction.NOEXIT, RoomOneList));
+            Direction.NOEXIT, 2, Direction.NOEXIT, 1, Direction.NOEXIT, Direction.NOEXIT,
+            RoomOneList));
+        map.add(new Room("Room2", "It don't smell too bad",
+            1, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT,
+           RoomTwoList));
 
         // create player and place in Room 0
         player = new Actor("player", "a loveable game-player", playerlist, map.get(0));
@@ -143,8 +150,6 @@ public class Game implements java.io.Serializable {
         showRoomDescription(movePlayerTo(Direction.DOWN));
     }
 
-
-
     private void look() {
         showStr("You are in the " + getPlayer().getRoom().describe());
     }
@@ -230,8 +235,10 @@ public class Game implements java.io.Serializable {
             msg = processVerb(wordlist);
         } else if (wordlist.size() == 2) {
             msg = processVerbNoun(wordlist);
+        } else if (wordlist.size() == 3) {
+            msg = processVerbNoun(wordlist);
         } else {
-            msg = "Only 2 word commands allowed!";
+            msg = "Only 3 word commands allowed!";
         }
         return msg;
     }
@@ -252,9 +259,7 @@ public class Game implements java.io.Serializable {
     public void showIntro() {
         String s;
         s = """
-            You have fallen down a rabbit hole and arrived in
-            an underground cavern that smells strongly of troll.
-            Where do you want to go? [Enter n, s, w, e, u, d]
+            This should contain a proper intro, yo [Enter n, s, w, e, u, d]
             Need help? [Enter help]
             (or enter q to quit)""";
         showStr(s);

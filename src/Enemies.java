@@ -14,7 +14,7 @@ Discount Gandalf - Encountered in Room 6(66)
 
 	Description:
 	“A dirty old hobo blocks your way. Cloaked in a black trash bag, tinfoil hat and waving a stick around.
-	“You shall not pass! *burp* You got some cash or 		grass, bitch?”
+	“You shall not pass! *burp* You got some cash or grass, bitch?”
 
 	What will you do? Make a choice.
 	1. If player has cash - give it to him.
