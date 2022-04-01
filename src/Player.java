@@ -54,17 +54,6 @@ public class Player {
     }
   }
 
-  public Enums playerEats(String itemName) {
-    Item itemConsume = searchInventory(itemName);
-    if (itemConsume != null) {
-      if (itemConsume instanceof Food food) {
-        inventory.remove(food);
-        return food.getConsumable();
-      }
-    }
-    return Enums.INVALID;
-  }
-
   public void isItConsumable(Food food) {
     if (food.getConsumable().equals(Enums.EDIBLE)) {
       System.out.println("Hp is now: " + getPlayerHealth());
