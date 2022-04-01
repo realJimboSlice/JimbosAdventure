@@ -106,7 +106,6 @@ public class Player {
     }
   }
 
-
   public void attack(String enemyName) {
     Enemy enemyHere = currentRoom.searchForEnemy(enemyName);
     Scanner input = new Scanner(System.in);
@@ -117,7 +116,6 @@ public class Player {
           enemyHere.setEnemyHealth(currentWeapon.getDamage());
           takeDamage(enemyHere);
           System.out.println(playerHealth);
-        } else if (enemyHere.getEnemyHealth() > 0) {
         }
 
 
