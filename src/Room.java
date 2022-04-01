@@ -29,7 +29,6 @@ public class Room {
     return null;
   }
 
-  //getters and setters for name and description
   public String getName() {
     return name;
   }

@@ -188,7 +188,6 @@ public class Player {
     System.out.println("Enemies currently here: " + getCurrentRoom().getRoomEnemy());
   }
 
-  //Getters and setters for currentRoom
   public void setCurrentRoom(Room currentRoom) {
     this.currentRoom = currentRoom;
   }

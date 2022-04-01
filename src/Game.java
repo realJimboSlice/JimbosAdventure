@@ -12,7 +12,7 @@ public class Game {
 
     text = new Text();
 
-    player = new Player(map.getPlayerStartRoom());
+    player = new Player(map.getStartRoom());
   }
 
   public void startGame() {

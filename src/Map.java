@@ -1,9 +1,9 @@
 public class Map {
-  private Room playerStartRoom;
+  private Room StartRoom;
 
 
   public Map() {
-    this.playerStartRoom = null;
+    this.StartRoom = null;
   }
 
   public void World() {
@@ -45,7 +45,7 @@ public class Map {
     room9.setWest(room8);
     room9.setNorth(room6);
 
-    playerStartRoom = room1;
+    StartRoom = room1;
 
     // Weapons and items
     MeleeWeapon stick = new MeleeWeapon("stick", "It's a stick. What did you expect?", 7);
@@ -80,8 +80,8 @@ public class Map {
     room3.setEnemies(duffman);
   }
 
-  public Room getPlayerStartRoom() {
-    return this.playerStartRoom;
+  public Room getStartRoom() {
+    return this.StartRoom;
   }
 
 }
