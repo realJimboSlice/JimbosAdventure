@@ -7,14 +7,14 @@ public class Room {
   private Room South;
   private Room East;
   private Room West;
-  private boolean currentRoom;
+  private boolean Roombool;
   private ArrayList<Item> roomInventory = new ArrayList<>();
   private ArrayList<Enemy> roomEnemy;
 
   public Room(String name, String description) {
     this.name = name;
     this.description = description;
-    this.currentRoom = false;
+    this.Roombool = false;
     this.roomEnemy = new ArrayList<>();
   }
 
@@ -89,12 +89,12 @@ public class Room {
     }
   }
 
-  public boolean getCurrentRoom() {
-    return currentRoom;
+  public boolean getRoombool() {
+    return Roombool;
   }
 
-  public void setCurrentRoom(boolean currentRoom) {
-    this.currentRoom = currentRoom;
+  public void setRoombool(boolean roombool) {
+    this.Roombool = roombool;
   }
 
 

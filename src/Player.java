@@ -171,10 +171,10 @@ public class Player {
     if (room == null) {
       System.out.println("No passage through here.");
     } else {
-      currentRoom.setCurrentRoom(true);
+      currentRoom.setRoombool(true);
       currentRoom = room;
 
-      if (!currentRoom.getCurrentRoom()) {
+      if (!currentRoom.getRoombool()) {
         Look();
       } else {
         Look();
