@@ -7,7 +7,6 @@ public class Player {
   private Weapon currentWeapon;
   private ArrayList<Item> inventory;
 
-  //constructor for Player
   public Player(Room currentRoom) {
     this.currentRoom = currentRoom;
     this.playerHealth = 420;
@@ -53,7 +52,6 @@ public class Player {
         isItConsumable(food);
       }
     }
-
   }
 
   public Enums playerEats(String itemName) {
